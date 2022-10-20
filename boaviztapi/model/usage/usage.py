@@ -1,6 +1,8 @@
 import os
+from datetime import datetime, timedelta
 
 import pandas as pd
+import requests
 
 from boaviztapi.model.boattribute import Boattribute, Status
 
@@ -86,9 +88,42 @@ class ModelUsageCloud(ModelUsageServer):
         super().__init__(**kwargs)
         self.instance_per_server = Boattribute(default=self.DEFAULT_INSTANCE_PER_SERVER)
 
+class ModelIntensitySource:
+    def __init__(self):
+        self.time_window = Boattribute(default=10, unit="minutes")
+        self.source = Boattribute(default="boavizta")
+        self.url = None
+        self.token = None
+        self.start_date = Boattribute(default=datetime.now().isoformat(), unit="ISO 8601")
+        self.stop_date = Boattribute(unit="ISO 8601")
+
+    def get_forcast(self, location):
+        if self.source.value == "carbon_aware_api":
+            r = requests.get(
+                f"{self.url}/emissions/forecasts/current?location={location}&dataStartAt={self.start_date.value}&dataEndAt={self.stop_date.value}&windowSize={self.time_window.value}",
+                headers={'Authorization': self.token})
+            return r.json()
+        return None
+
+    def get_intensity(self, location):
+        intensity = Boattribute()
+        if self.source.value == "carbon_aware_api":
+            request = requests.get(
+                f"{self.url}/emissions/average-carbon-intensity?location={location}&startTime={self.start_date.value}&endTime={self.stop_date.value}",
+                headers={'Authorization': self.token})
+            intensity.source = "carbon_aware_api"
+            intensity.value = request.json()
+            intensity.status = Status.COMPLETED
+        else:
+            sub = _electricity_emission_factors_df
+            sub = sub[sub['code'] == location]
+            intensity.source = sub.iloc[0].gwp_emission_source
+            intensity.value = sub.iloc[0].gwp_emission_factor
+            intensity.status = Status.COMPLETED
+        return intensity
+
 
 def default_impact_factor(args):
     sub = args["emission_factors_df"]
     sub = sub[sub['code'] == args["usage_location"].value]
-    return float(sub[f"{args['impact_type']}_emission_factor"]), sub[
-        f"{args['impact_type']}_emission_source"], Status.COMPLETED
+    return getattr(sub.iloc[0], f"{args['impact_type']}_emission_factor"), getattr(sub.iloc[0], f"{args['impact_type']}_emission_source") , Status.COMPLETED

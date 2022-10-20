@@ -10,9 +10,9 @@ NumberSignificantFigures = Tuple[float, int]
 class Component:
     NAME = "COMPONENT"
 
-    def __init__(self, **kwargs):
+    def __init__(self, usage: ModelUsage = None, **kwargs):
         self._units = None
-        self._usage = None
+        self._usage = usage
 
     def __iter__(self):
         for attr, value in self.__dict__.items():
@@ -25,7 +25,7 @@ class Component:
         return self._usage
 
     @usage.setter
-    def usage(self, value: int) -> None:
+    def usage(self, value: ModelUsage) -> None:
         self._usage = value
 
     @property
@@ -40,7 +40,6 @@ class Component:
 
     def __impact_usage(self, impact_type: str) -> NumberSignificantFigures:
         impact_factor = getattr(self.usage, f'{impact_type}_factor')
-
         impacts = impact_factor.value * (
                 self.usage.hours_electrical_consumption.value / 1000) * self.usage.use_time.value
         sig_fig = self.__compute_significant_numbers_usage(impact_factor.value)

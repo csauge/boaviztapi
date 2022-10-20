@@ -6,9 +6,18 @@ import pandas as pd
 from boaviztapi.dto import BaseDTO
 from boaviztapi.model.boattribute import Status
 from boaviztapi.model.usage import ModelUsage, ModelUsageServer, ModelUsageCloud
+from boaviztapi.model.usage.usage import ModelIntensitySource
 
 _electricity_emission_factors_df = pd.read_csv(os.path.join(os.path.dirname(__file__),
                                                             '../../data/electricity/electricity_impact_factors.csv'))
+
+
+class IntensitySource(BaseDTO):
+    source: Optional[str] = None
+    url: Optional[str] = None
+    token: Optional[str] = None
+    start_date: Optional[str] = None
+    stop_date: Optional[str] = None
 
 
 class WorkloadTime(BaseDTO):
@@ -30,6 +39,8 @@ class Usage(BaseDTO):
     gwp_factor: Optional[float] = None
     pe_factor: Optional[float] = None
     adp_factor: Optional[float] = None
+
+    gwp_source: Optional[IntensitySource] = None
 
 
 class UsageServer(Usage):
@@ -76,6 +87,22 @@ def smart_mapper_usage(usage_dto: Usage) -> ModelUsage:
 
             usage_model.usage_location.value = usage_dto.usage_location
             usage_model.usage_location.status = Status.INPUT
+
+    if usage_dto.gwp_factor is not None:
+        usage_model.gwp_factor.value = usage_dto.gwp_factor
+        usage_model.gwp_factor.status = Status.INPUT
+    elif usage_dto.gwp_source is not None:
+        gwp_source = mapper_intensity_source(usage_dto.gwp_source)
+        usage_model.gwp_factor = gwp_source.get_intensity(usage_model.usage_location)
+
+    if usage_dto.adp_factor is not None:
+        usage_model.adp_factor.value = usage_dto.adp_factor
+        usage_model.adp_factor.status = Status.INPUT
+
+    if usage_dto.pe_factor is not None:
+        usage_model.pe_factor.value = usage_dto.pe_factor
+        usage_model.pe_factor.status = Status.INPUT
+
     return usage_model
 
 
@@ -92,8 +119,8 @@ def smart_mapper_usage_server(usage_dto: UsageServer) -> ModelUsageServer:
 
     if usage_dto.hours_use_time is not None or usage_dto.days_use_time is not None or usage_dto.years_use_time is not None:
         usage_model_server.use_time.value = (usage_dto.hours_use_time or 0) + \
-                                     (usage_dto.days_use_time or 0) * 24 + \
-                                     (usage_dto.years_use_time or 0) * 24 * 365
+                                            (usage_dto.days_use_time or 0) * 24 + \
+                                            (usage_dto.years_use_time or 0) * 24 * 365
 
         usage_model_server.use_time.status = Status.INPUT
 
@@ -130,8 +157,8 @@ def smart_mapper_usage_cloud(usage_dto: UsageCloud):
 
     if usage_dto.hours_use_time is not None or usage_dto.days_use_time is not None or usage_dto.years_use_time is not None:
         usage_model_cloud.use_time.value = (usage_dto.hours_use_time or 0) + \
-                                            (usage_dto.days_use_time or 0) * 24 + \
-                                            (usage_dto.years_use_time or 0) * 24 * 365
+                                           (usage_dto.days_use_time or 0) * 24 + \
+                                           (usage_dto.years_use_time or 0) * 24 * 365
 
         usage_model_cloud.use_time.status = Status.INPUT
 
@@ -157,3 +184,27 @@ def smart_mapper_usage_cloud(usage_dto: UsageCloud):
         usage_model_cloud.instance_per_server.status = Status.INPUT
 
     return usage_model_cloud
+
+
+def mapper_intensity_source(dto_intensity_source: IntensitySource) -> ModelIntensitySource:
+    intensity_source = ModelIntensitySource()
+
+    if dto_intensity_source.source is not None:
+        intensity_source.source.value = dto_intensity_source.source
+        intensity_source.source.status = Status.INPUT
+
+    if dto_intensity_source.url is not None:
+        intensity_source.url = dto_intensity_source.url
+
+    if dto_intensity_source.stop_date is not None:
+        intensity_source.stop_date.value = dto_intensity_source.stop_date
+        intensity_source.stop_date.status = Status.INPUT
+
+    if dto_intensity_source.start_date is not None:
+        intensity_source.start_date.value = dto_intensity_source.start_date
+        intensity_source.start_date.status = Status.INPUT
+
+    if dto_intensity_source.token is not None:
+        intensity_source.token = dto_intensity_source.token
+
+    return intensity_source
