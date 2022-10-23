@@ -3,16 +3,15 @@ import os
 
 import markdown
 from fastapi import FastAPI
-from fastapi.openapi.utils import get_openapi
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.openapi.utils import get_openapi
 
 from boaviztapi import __version__
-from boaviztapi.routers.usage_router import usage_router
-
+from boaviztapi.routers.cloud_router import cloud_router
 from boaviztapi.routers.component_router import component_router
 from boaviztapi.routers.consumption_profile_router import consumption_profile
 from boaviztapi.routers.server_router import server_router
-from boaviztapi.routers.cloud_router import cloud_router
+from boaviztapi.routers.usage_router import usage_router
 from boaviztapi.routers.utils_router import utils_router
 
 app = FastAPI()
@@ -37,7 +36,7 @@ app.include_router(usage_router)
 if __name__ == '__main__':
     import uvicorn
 
-    uvicorn.run('main:app', host='localhost', port=5000, reload=True, debug=True)
+    uvicorn.run('main:app', host='localhost', port=5000, reload=True)
 
 
 @app.on_event("startup")
