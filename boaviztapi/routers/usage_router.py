@@ -19,12 +19,12 @@ async def get_intensity(itensity_source: IntensitySource = Body(None),
     return intensity
 
 
-@usage_router.post("/gwp/forcast_intensity")
-async def get_intensity_forcast(itensity_source: IntensitySource = Body(None),
-                                location: str = "global"):
-    intensity_source = mapper_intensity_source(itensity_source)
-    forcast = intensity_source.get_forcast(location)
-    return forcast
+@usage_router.post("/gwp/forecast_intensity")
+async def get_intensity_forecast(intensity_source: IntensitySource = Body(None),
+                                 location: str = "global"):
+    intensity_source = mapper_intensity_source(intensity_source)
+    forecast = intensity_source.get_forecast(location)
+    return forecast
 
 
 @usage_router.post("/simple_usage")

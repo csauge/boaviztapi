@@ -88,6 +88,7 @@ class ModelUsageCloud(ModelUsageServer):
         super().__init__(**kwargs)
         self.instance_per_server = Boattribute(default=self.DEFAULT_INSTANCE_PER_SERVER)
 
+
 class ModelIntensitySource:
     def __init__(self):
         self.time_window = Boattribute(default=10, unit="minutes")
@@ -97,7 +98,7 @@ class ModelIntensitySource:
         self.start_date = Boattribute(default=datetime.now().isoformat(), unit="ISO 8601")
         self.stop_date = Boattribute(unit="ISO 8601")
 
-    def get_forcast(self, location):
+    def get_forecast(self, location):
         if self.source.value == "carbon_aware_api":
             r = requests.get(
                 f"{self.url}/emissions/forecasts/current?location={location}&dataStartAt={self.start_date.value}&dataEndAt={self.stop_date.value}&windowSize={self.time_window.value}",
