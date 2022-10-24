@@ -95,8 +95,9 @@ class ModelIntensitySource:
         self.source = Boattribute(default="boavizta")
         self.url = None
         self.token = None
-        self.start_date = Boattribute(default=datetime.now().isoformat(), unit="ISO 8601")
-        self.stop_date = Boattribute(unit="ISO 8601")
+        now = datetime.now()
+        self.start_date = Boattribute(default=(now - timedelta(hours=1)).isoformat(), unit="ISO 8601")
+        self.stop_date = Boattribute(default=now.isoformat(), unit="ISO 8601")
 
     def get_forecast(self, location):
         if self.source.value == "carbon_aware_api":
@@ -109,11 +110,11 @@ class ModelIntensitySource:
     def get_intensity(self, location):
         intensity = Boattribute()
         if self.source.value == "carbon_aware_api":
-            request = requests.get(
+            response = requests.get(
                 f"{self.url}/emissions/average-carbon-intensity?location={location}&startTime={self.start_date.value}&endTime={self.stop_date.value}",
                 headers={'Authorization': self.token})
             intensity.source = "carbon_aware_api"
-            intensity.value = request.json()
+            intensity.value = response.json()
             intensity.status = Status.COMPLETED
         else:
             sub = _electricity_emission_factors_df
