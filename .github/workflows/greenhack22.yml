@@ -48,9 +48,3 @@ jobs:
       
       - name: Push api images
         run: docker push ghcr.io/boavizta/boaviztapi:greenhack22
-      
-      - name: Build doc the Docker image
-        run: docker build docs --file docs/Dockerfile --tag ghcr.io/boavizta/boaviztapi-doc:greenhack22
-      
-      - name: Push doc images
-        run: docker push ghcr.io/boavizta/boaviztapi-doc:greenhack22
