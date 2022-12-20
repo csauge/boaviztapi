@@ -1,0 +1,1534 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>Get the impacts of a cpu - Boavizta API documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-5-min" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Boavizta API documentation" class="md-header__button md-logo" aria-label="Boavizta API documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Boavizta API documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Get the impacts of a cpu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Boavizta API documentation" class="md-nav__button md-logo" aria-label="Boavizta API documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Boavizta API documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Getting started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://api.boavizta.org/docs" class="md-nav__link">
+        Try the API (OpenAPI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Get the impacts of a cpu
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Get the impacts of a cpu
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-cpu-name" class="md-nav__link">
+    Get the impacts from cpu name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-values-used-to-measure-the-impacts-of-the-cpu" class="md-nav__link">
+    Get the values used to measure the impacts of the cpu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-characteristics" class="md-nav__link">
+    Get the impacts from custom cpu characteristics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-usage-using-an-electrical-consumption" class="md-nav__link">
+    Get the impacts from custom cpu usage using an electrical consumption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-usage-using-a-workload" class="md-nav__link">
+    Get the impacts from custom cpu usage using a workload
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single_server/" class="md-nav__link">
+        Get the impacts of a server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single_cloud_instance/" class="md-nav__link">
+        Get the impacts of a cloud instance (AWS)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumption_profile/" class="md-nav__link">
+        Get started with consumption profiles
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Explanations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Explanations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Explanations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/boavizta_db/" class="md-nav__link">
+        Boavizta database
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/impacts/" class="md-nav__link">
+        Impacts criteria
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/manufacture_methodology/" class="md-nav__link">
+        Manufacture methodology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          Usage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Usage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Usage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/usage/usage/" class="md-nav__link">
+        Methodology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/usage/duration/" class="md-nav__link">
+        Duration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/usage/elec_factors/" class="md-nav__link">
+        Electrical impacts factors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/usage/elec_conso/" class="md-nav__link">
+        Electrical consumption
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/usage/countries/" class="md-nav__link">
+        Countries
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/consumption_profile/" class="md-nav__link">
+        Consumption profiles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/auto_complete/" class="md-nav__link">
+        Auto-complete
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/archetypes/" class="md-nav__link">
+        Archetypes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/verbose/" class="md-nav__link">
+        Verbose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_9">
+          Components
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Components" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          Components
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/component/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/cpu/" class="md-nav__link">
+        CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/ram/" class="md-nav__link">
+        RAM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/ssd/" class="md-nav__link">
+        SSD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/hdd/" class="md-nav__link">
+        HDD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/motherboard/" class="md-nav__link">
+        Motherboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/power_supply/" class="md-nav__link">
+        Power supply
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/assembly/" class="md-nav__link">
+        Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/components/case/" class="md-nav__link">
+        Case
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Devices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Devices" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_10">
+          <span class="md-nav__icon md-icon"></span>
+          Devices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/devices/devices/" class="md-nav__link">
+        Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/devices/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/devices/cloud/" class="md-nav__link">
+        Cloud instances
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Explanations/useful_resources/" class="md-nav__link">
+        Useful resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/component_route/" class="md-nav__link">
+        Component route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/model/" class="md-nav__link">
+        Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/server_route/" class="md-nav__link">
+        Server route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/cloud_route/" class="md-nav__link">
+        Cloud route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6">
+          Architecture decisions records (ADRs)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Architecture decisions records (ADRs)" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          Architecture decisions records (ADRs)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADR/adr1-Bottom-up.md" class="md-nav__link">
+        Bottom up methodology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADR/adr2-Alway-return-something.md" class="md-nav__link">
+        Always return something
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reference/deploy/" class="md-nav__link">
+        Deploy
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-cpu-name" class="md-nav__link">
+    Get the impacts from cpu name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-values-used-to-measure-the-impacts-of-the-cpu" class="md-nav__link">
+    Get the values used to measure the impacts of the cpu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-characteristics" class="md-nav__link">
+    Get the impacts from custom cpu characteristics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-usage-using-an-electrical-consumption" class="md-nav__link">
+    Get the impacts from custom cpu usage using an electrical consumption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-impacts-from-custom-cpu-usage-using-a-workload" class="md-nav__link">
+    Get the impacts from custom cpu usage using a workload
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="getting-started-5-min">Getting started (5 min)</h1>
+<p>This page presents basic queries that can be used to retrieve impacts of a CPU. See the detailed documentation for the other components.</p>
+<p>You use <code>curl</code> in command line to query Boavizta demo (public) API.</p>
+<p>💡 <em>You can format the results by using jq (<code>curl -X 'GET' 'https://api.boavizta.org/v1/cloud/aws/all_instances' | jq</code>)</em></p>
+<h2 id="get-the-impacts-from-cpu-name">Get the impacts from cpu name</h2>
+<p>In this query, we use the cpu name to evaluate its impact.</p>
+<p>Query : </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl -X <span class="s1">&#39;POST&#39;</span> <span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="s1">&#39;https://api.boavizta.org/v1/component/cpu?verbose=false&amp;allocation=TOTAL&#39;</span> <span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  -H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  -d <span class="s1">&#39;{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s1">  &quot;name&quot;: &quot;intel xeon gold 6134&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+
+<p>This query returns :</p>
+<ul>
+<li>The total manufacture impact (gwp, pe, adp) of the CPU</li>
+<li>The usage impact (gwp, pe, adp) of the CPU for one year (default)</li>
+</ul>
+<p>Result :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10670</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.32e-05</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="get-the-values-used-to-measure-the-impacts-of-the-cpu">Get the values used to measure the impacts of the cpu</h2>
+<p>This is the same query as before. However, you add the <code>verbose=true</code> flag to get the value of the attributes used for the calculation.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl -X <span class="s1">&#39;POST&#39;</span> <span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  <span class="s1">&#39;https://api.boavizta.org/v1/component/cpu?verbose=true&amp;allocation=TOTAL&#39;</span> <span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  -H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  -d <span class="s1">&#39;{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s1">  &quot;name&quot;: &quot;intel xeon gold 6134&quot;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+
+<p>This query returns :</p>
+<ul>
+<li>The total manufacture impact (gwp, pe, adp) of the CPU</li>
+<li>The CPU characteristics used to evaluate these impacts</li>
+<li>The usage impact (gwp, pe, adp) of the CPU for one year (default)</li>
+</ul>
+<p>Result :</p>
+<p>You can see that the API have completed the needed value from the cpu name. We parse and fuzzymatch the cpu <code>name</code> with our dataset of cpu to identify <code>model_range</code>, <code>manufacturer</code> and <code>family</code>.
+The <code>die_size_per_core</code> is completed from the cpu family.</p>
+<p>The usage impact have been evaluated using a default level of workload of 50% with the consumption profile of a xeon gold (completed from cpu <code>name</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10670</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.32e-05</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">  </span><span class="nt">&quot;verbose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">    </span><span class="nt">&quot;units&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="nt">&quot;manufacture_impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">      </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">      </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">      </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="nt">&quot;core_units&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en.wikichip.org/wiki/intel/microarchitectures/skylake_(server)&quot;</span><span class="w"></span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">    </span><span class="nt">&quot;die_size_per_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.248</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mm2&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en.wikichip.org/wiki/intel/microarchitectures/skylake_(server)&quot;</span><span class="w"></span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="w">    </span><span class="nt">&quot;model_range&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xeon gold&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a><span class="w">    </span><span class="nt">&quot;manufacturer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;intel&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="w">    </span><span class="nt">&quot;family&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;skylake&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a><span class="w">    </span><span class="nt">&quot;USAGE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a><span class="w">      </span><span class="nt">&quot;usage_impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a><span class="w">        </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a><span class="w">          </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a><span class="w">          </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a><span class="w">        </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a><span class="w">          </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10670</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a><span class="w">          </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a><span class="w">        </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a><span class="w">          </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.32e-05</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a><span class="w">          </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a><span class="w">      </span><span class="nt">&quot;hours_electrical_consumption&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">94.62364134445255</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;W&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a><span class="w">      </span><span class="nt">&quot;time_workload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-92" name="__codelineno-3-92" href="#__codelineno-3-92"></a><span class="w">      </span><span class="nt">&quot;usage_location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-93" name="__codelineno-3-93" href="#__codelineno-3-93"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EEE&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-94" name="__codelineno-3-94" href="#__codelineno-3-94"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CodSP3 - NCS Country Codes - NATO&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-95" name="__codelineno-3-95" href="#__codelineno-3-95"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-96" name="__codelineno-3-96" href="#__codelineno-3-96"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-97" name="__codelineno-3-97" href="#__codelineno-3-97"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-98" name="__codelineno-3-98" href="#__codelineno-3-98"></a><span class="w">      </span><span class="nt">&quot;adp_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-99" name="__codelineno-3-99" href="#__codelineno-3-99"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">6.42e-08</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-100" name="__codelineno-3-100" href="#__codelineno-3-100"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KgSbeq/kWh&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-101" name="__codelineno-3-101" href="#__codelineno-3-101"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-102" name="__codelineno-3-102" href="#__codelineno-3-102"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-103" name="__codelineno-3-103" href="#__codelineno-3-103"></a><span class="w">          </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ADEME BASE IMPACT&quot;</span><span class="w"></span>
+<a id="__codelineno-3-104" name="__codelineno-3-104" href="#__codelineno-3-104"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-105" name="__codelineno-3-105" href="#__codelineno-3-105"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-106" name="__codelineno-3-106" href="#__codelineno-3-106"></a><span class="w">      </span><span class="nt">&quot;gwp_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-107" name="__codelineno-3-107" href="#__codelineno-3-107"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.38</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-108" name="__codelineno-3-108" href="#__codelineno-3-108"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2e/kWh&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-109" name="__codelineno-3-109" href="#__codelineno-3-109"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-110" name="__codelineno-3-110" href="#__codelineno-3-110"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-111" name="__codelineno-3-111" href="#__codelineno-3-111"></a><span class="w">          </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.sciencedirect.com/science/article/pii/S0306261921012149 : \nAverage of 27 european countries&quot;</span><span class="w"></span>
+<a id="__codelineno-3-112" name="__codelineno-3-112" href="#__codelineno-3-112"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-113" name="__codelineno-3-113" href="#__codelineno-3-113"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-114" name="__codelineno-3-114" href="#__codelineno-3-114"></a><span class="w">      </span><span class="nt">&quot;pe_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-115" name="__codelineno-3-115" href="#__codelineno-3-115"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">12.874</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-116" name="__codelineno-3-116" href="#__codelineno-3-116"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ/kWh&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-117" name="__codelineno-3-117" href="#__codelineno-3-117"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-118" name="__codelineno-3-118" href="#__codelineno-3-118"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-119" name="__codelineno-3-119" href="#__codelineno-3-119"></a><span class="w">          </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ADPf / (1-%renewable_energy)&quot;</span><span class="w"></span>
+<a id="__codelineno-3-120" name="__codelineno-3-120" href="#__codelineno-3-120"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-121" name="__codelineno-3-121" href="#__codelineno-3-121"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-122" name="__codelineno-3-122" href="#__codelineno-3-122"></a><span class="w">      </span><span class="nt">&quot;use_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-123" name="__codelineno-3-123" href="#__codelineno-3-123"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8760</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-124" name="__codelineno-3-124" href="#__codelineno-3-124"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hours&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-125" name="__codelineno-3-125" href="#__codelineno-3-125"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-126" name="__codelineno-3-126" href="#__codelineno-3-126"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-3-127" name="__codelineno-3-127" href="#__codelineno-3-127"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-128" name="__codelineno-3-128" href="#__codelineno-3-128"></a><span class="w">      </span><span class="nt">&quot;params&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-129" name="__codelineno-3-129" href="#__codelineno-3-129"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-130" name="__codelineno-3-130" href="#__codelineno-3-130"></a><span class="w">          </span><span class="nt">&quot;a&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">35.5688</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-131" name="__codelineno-3-131" href="#__codelineno-3-131"></a><span class="w">          </span><span class="nt">&quot;b&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2438</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-132" name="__codelineno-3-132" href="#__codelineno-3-132"></a><span class="w">          </span><span class="nt">&quot;c&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">9.6694</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-133" name="__codelineno-3-133" href="#__codelineno-3-133"></a><span class="w">          </span><span class="nt">&quot;d&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.6087</span><span class="w"></span>
+<a id="__codelineno-3-134" name="__codelineno-3-134" href="#__codelineno-3-134"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-3-135" name="__codelineno-3-135" href="#__codelineno-3-135"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-136" name="__codelineno-3-136" href="#__codelineno-3-136"></a><span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-3-137" name="__codelineno-3-137" href="#__codelineno-3-137"></a><span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;From CPU model range&quot;</span><span class="w"></span>
+<a id="__codelineno-3-138" name="__codelineno-3-138" href="#__codelineno-3-138"></a><span class="w">      </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-139" name="__codelineno-3-139" href="#__codelineno-3-139"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-140" name="__codelineno-3-140" href="#__codelineno-3-140"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-3-141" name="__codelineno-3-141" href="#__codelineno-3-141"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="get-the-impacts-from-custom-cpu-characteristics">Get the impacts from custom cpu characteristics</h2>
+<p>In this query, we give some characteristics to describe the CPU. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl -X <span class="s1">&#39;POST&#39;</span> <span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  <span class="s1">&#39;https://api.boavizta.org/v1/component/cpu?verbose=true&amp;allocation=TOTAL&#39;</span> <span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  -H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a> -d <span class="s1">&#39;{</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="s1">      &quot;core_units&quot;: 24,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="s1">      &quot;family&quot;: &quot;Skylake&quot;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="s1">      }&#39;</span>
+</code></pre></div>
+
+<p>This query returns :</p>
+<ul>
+<li>The total manufacture impact (gwp, pe, adp) of the CPU</li>
+<li>The usage impact (gwp, pe, adp) of the CPU for one year (default)</li>
+</ul>
+<p>Result :</p>
+<p>Since only lowercase are used, the API will correct Skylake to skylake (CHANGED). And complete the missing attribute from the given attributes (COMPLETED) or by default ones (DEFAULT).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">610</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20550</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">      </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">      </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.000102</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">  </span><span class="nt">&quot;verbose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="nt">&quot;units&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">    </span><span class="nt">&quot;manufacture_impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">      </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">      </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">      </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">      </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">      </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">    </span><span class="nt">&quot;core_units&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INPUT&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="w">    </span><span class="nt">&quot;die_size_per_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.289</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mm2&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMPLETED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a><span class="w">        </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en.wikichip.org/wiki/intel/microarchitectures/skylake_(server)&quot;</span><span class="w"></span>
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a><span class="w">      </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a><span class="w">    </span><span class="nt">&quot;family&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a><span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;skylake&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a><span class="w">      </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHANGED&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a><span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a><span class="w">   </span><span class="err">...</span><span class="w"></span>
+<a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="get-the-impacts-from-custom-cpu-usage-using-an-electrical-consumption">Get the impacts from custom cpu usage using an electrical consumption</h2>
+<p>In this query we set a custom usage to an <code>intel xeon gold 6134</code>. The average electrical consumption is given.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl -X <span class="s1">&#39;POST&#39;</span> <span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  <span class="s1">&#39;https://api.boavizta.org/v1/component/cpu?verbose=false&amp;allocation=TOTAL&#39;</span> <span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  -H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  -d <span class="s1">&#39;{</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="s1">  &quot;name&quot;: &quot;intel xeon gold 6134&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="s1">  &quot;usage&quot;:{</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="s1">      &quot;hours_use_time&quot;: 2,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="s1">      &quot;usage_location&quot;: &quot;FRA&quot;,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="s1">      &quot;hours_electrical_consumption&quot;: 120</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="s1">  }}&#39;</span>
+</code></pre></div>
+
+<p>Result : </p>
+<ul>
+<li>The API will use an electrical consumption of 120 Watt/hours for 2 hours</li>
+<li>Usage impacts will be measure for the French electrical mix impacts </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">  </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">8e-09</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="get-the-impacts-from-custom-cpu-usage-using-a-workload">Get the impacts from custom cpu usage using a workload</h2>
+<p>In this query we set a custom usage to an <code>intel xeon gold 6134</code> with a TDP of 130 Watt. The average electrical consumption is retrieved.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl -X <span class="s1">&#39;POST&#39;</span> <span class="se">\</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  <span class="s1">&#39;https://api.boavizta.org/v1/component/cpu?verbose=false&amp;allocation=TOTAL&#39;</span> <span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  -H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  -d <span class="s1">&#39;{</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="s1">  &quot;name&quot;: &quot;intel xeon gold 6134&quot;,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="s1">  &quot;tdp&quot;: 130,</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="s1">  &quot;usage&quot;:{</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="s1">      &quot;hours_use_time&quot;: 2,</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="s1">      &quot;usage_location&quot;: &quot;FRA&quot;,</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="s1">      &quot;time_workload&quot;: 30</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="s1">  }}&#39;</span>
+</code></pre></div>
+
+<p>Result : </p>
+<ul>
+<li>The API will use the <code>xeon gold</code> consumption profile adapted for a TDP of 130 Watt with a level of workload of 30% for 2 hours to retrieve the electrical consumption of the CPU.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">&quot;gwp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">23.8</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgCO2eq&quot;</span><span class="w"></span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="nt">&quot;pe&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">353</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MJ&quot;</span><span class="w"></span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="nt">&quot;adp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="nt">&quot;manufacture&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">    </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">8e-09</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kgSbeq&quot;</span><span class="w"></span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>For further information see : <a href="../../Explanations/components/cpu/">The explanation page on cpu</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              FAQ
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../single_server/" class="md-footer__link md-footer__link--next" aria-label="Next: Get the impacts of a server" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Get the impacts of a server
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
